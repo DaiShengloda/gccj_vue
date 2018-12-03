@@ -21,5 +21,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## 简介
 ### 公众号项目
+``` bash
 # Vue loader、Vue Router、axios、rem转换、vue2-datepick、封装路由跳转及其他工具类；
 # keep-alive页面缓存、组件化开发、微信支付、登录注册；
+```
