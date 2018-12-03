@@ -1,0 +1,158 @@
+
+
+
+/*字体颜色*/
+.lz-col-666 {
+  color: #666;
+}
+.lz-col-000 {
+  color: #000;
+}
+
+.lz-col-333 {
+  color: #333;
+}
+.lz-col-888 {
+  color: #888;
+}
+
+.lz-col-fff {
+  color: #fff;
+}
+//橙色
+.lz-col-ff6e06{
+  color: #ff6e06;
+}
+/*产品详情-红*/
+.lz-col-fe5066 {
+  color: #fe5066;
+}
+/*紫色*/
+.lz-col-8c7fee {
+  color: $baseColor;
+}
+/*蓝色*/
+.lz-col-3aaaf8 {
+  color: $cpBaseCol;
+}
+
+.lz-bg-fff {
+  background-color: #ffffff;
+}
+
+
+
+/*首行缩进*/
+.t-indent {
+  text-indent: r(52);
+}
+
+/*文字排版*/
+.t-align-c {
+  text-align: center;
+}
+
+.t-align-r {
+  text-align: right;
+}
+
+.t-align-l {
+  text-align: left;
+}
+
+/*加粗*/
+.t-strong {
+  font-weight: 700;
+}
+
+/*边框*/
+.lz_bor {
+  border: 1px solid #e5e5e5;
+}
+
+.lz_active_bor-b {
+  border-bottom: 1px solid #ff6e06;
+}
+
+/*浮动*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hidden {
+  display: none
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+.clear {
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*图片*/
+.img-t {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/*图片居中*/
+.img-c{
+  display: block;
+  margin: 0 auto;
+}
+a.nochange{
+  color: #000;
+}
+a.nochange:hover,a.nochange:focus{
+  color: #000;
+  text-decoration: none;
+}
+.radius-50-perc {
+  border-radius: 50%;
+}
+
+/*版心*/
+
+.body-container{
+  //width: 100%;
+  width: r(750);
+}
+.w {
+  width: 100%;
+}
+
+.w-box {
+  width: 100%;
+  margin-top: r(30);
+  padding: 0 r(20);
+  background-color: #fff;
+}
+
+.w-box-c {
+  width: 100%;
+  padding: 0 r(20);
+}
+
+
+/*隐藏*/
+.hide{
+  display: none;
+}

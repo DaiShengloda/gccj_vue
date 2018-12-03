@@ -1,0 +1,81 @@
+
+    .cover {
+        max-width: r(850);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: rgba($color: #000000, $alpha: 0.5);
+        z-index: 100;
+      }
+      
+      #dialog {
+        max-width: r(850);
+        width: 100%;
+        height: 70%;
+        z-index: 2;
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        z-index: 101;
+        .title {
+          text-align: center;
+          border-bottom: 1px solid #ccc;
+          padding: r(20) 0;
+          font-size: r(36);
+          position: relative;
+        }
+        .close {
+          position: absolute;
+          left: r(30);
+          top: 50%;
+          transform: translate(0, -50%);
+          width: r(50);
+          height: r(50);
+        }
+        .pay_info {
+          padding: 0 r(30);
+          .total {
+            text-align: center;
+            font-size: r(60);
+            padding: r(40);
+          }
+          .pay_item {
+            padding: r(20) 0;
+            border-bottom: 1px solid #ccc;
+            font-size: r(30);
+            display: flex;
+            justify-content: space-between;
+            .l {
+              color: #929292;
+            }
+          }
+        }
+        .mz {
+          font-size: r(30);
+          margin:r(40) r(30);
+          display: block;
+          // checkbox{
+          //   transform: scale(0.8);
+          //   border: #e93030 1px solid;
+          // }
+        }
+        .pay_btn {
+          max-width: r(765); 
+          width: 90%;
+          position: fixed;
+          left: 50%;
+          transform: translate(-50%, 0);
+          bottom: r(100);
+          color: #fff;
+          font-size: r(32);
+          height: r(80);
+          border-radius: r(10);
+        }
+        .dis {
+          background: #ccc;
+        }
+        .active {
+          background: #b79448;
+        }
+      }

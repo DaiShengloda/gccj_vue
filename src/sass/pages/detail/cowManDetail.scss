@@ -1,0 +1,41 @@
+.content-genius {
+  .genius {
+    padding: r(30);
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    .icon_photo {
+      width: r(100);
+      height: r(100);
+      margin-right: r(20);
+      .icon-photo {
+        width: r(100);
+        height: r(100);
+      }
+    }
+    .genius-right {
+      max-width:r(700);
+      .h3 {
+        font-size: r(34);
+      }
+
+      .p {
+        font-size: r(26);
+        color: #666666;
+        line-height: r(40);
+      }
+
+      .genius-time {
+        font-size: r(26);
+        color: #999999;
+      }
+    }
+  }
+}
+
+// 牛人掌股买卖
+.line-14 {
+  width: 100%;
+  height: r(14);
+  background: #eeeeee;
+  border-bottom: 1px solid #dddddd;
+}

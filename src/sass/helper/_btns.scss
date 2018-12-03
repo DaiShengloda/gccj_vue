@@ -1,0 +1,87 @@
+/*按钮*/
+
+/*最大按钮*/
+.wts-btn-big{
+    @include button-variant(#fff,$bg-color-ff6e06);
+    @include button-size(r(690),r(90),r(36),r(90),r(10));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*中型按钮*/
+  .wts-btn-middle{
+    @include button-variant(#fff,#ff6e06);
+    @include button-size(r(294),r(80),r(32),r(80),r(8));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*全局按钮*/
+  .wts-btn-all{
+    @include button-variant(#fff,#ff6e06);
+    @include button-size(r(750),r(110),r(40),r(110),0);
+    display: block;
+    text-align: center;
+  }
+  
+  .wts-btn-big-blue{
+    @include button-variant(#fff,#3aa9f8);
+    @include button-size(r(690),r(94),r(32),r(94),r(10));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*蓝色线型按钮-中*/
+  .wts-btn-cp{
+    @include button-line(#fff,$bg-color-ff6e06);
+    @include button-size(r(310),r(80),r(36),r(76),r(10));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  //半圆按钮
+  .wts-btn-radius{
+    @include button-line(#aaa,#fff);
+    @include button-size(r(153),r(55),r(26),r(55),r(25));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /*微大型按钮*/
+  .wts-btn-big-01{
+    @include button-variant(#fff,$bg-color-ff6e06);
+    @include button-size(r(590),r(90),r(36),r(90),r(10));
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /*查看更多*/
+  .wts-btn-more{
+    display: block;
+    border-top: 1px solid #eee;
+    height: r(86);
+    line-height: r(86);
+    text-align: center;
+    margin-left: r(-60);
+    color: #000;
+    font-size: r(28);
+    position: relative;
+  }
+  .wts-btn-more:after{
+    content: '';
+    position: absolute;
+    top:50%;
+    right:38%;
+    margin-top: r(-18);
+    margin-left: r(90);
+    width: r(22);
+    height: r(22);
+    border-right: r(3) solid #000;
+    border-top: r(3) solid #000;
+    transform:rotate(135deg);
+  }
+  

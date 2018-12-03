@@ -1,0 +1,34 @@
+
+
+/*多属性传递
+ex:
+@include px2rems((font-size: 28,height: 90,line-height: 90,padding-left: 20,padding-right: 20));
+font-size: 0.37333rem;
+height: 1.2rem;
+line-height: 1.2rem;
+padding-left: 0.26667rem;
+padding-right: 0.26667rem;
+*/
+@mixin px2rems($pxs){
+  @each $key, $value in $pxs{
+    #{$key}: $value/75 * 1rem;
+  }
+}
+/* 属性多值传递
+ex:
+@include remCalc(padding,10,20);
+padding: 0.13333rem 0.26667rem;*/
+@mixin remCalc($property, $values...) {
+  $max: length($values);
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: nth($values, $i);
+    $remValues: #{$remValues + $value/75}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  #{$property}: $remValues;
+}
+

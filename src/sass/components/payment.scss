@@ -1,0 +1,124 @@
+.payment{
+    max-width: r(850);
+    height:100%;
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    z-index:999;
+    background:rgba(77,77,77,0.5);   
+    .pay-box {
+        max-width: r(850);
+        position:fixed;
+        bottom:0;  
+        background:rgba(255,255,255,1);
+        width:100%;         
+        .pay-top{
+            display:flex;  
+            align-items:center; 
+            padding:r(20) r(30);
+            border-bottom:#e6e6e6 1px solid;                   
+            .top-close{
+                width:r(100);
+                height:r(50);             
+                .close-img{
+                    width:r(50);
+                    height:r(50);  
+                    display:block;  
+                }              
+            }
+            .top-title{
+                width:100%;
+                text-align:center;
+                font-size:r(32); 
+                margin-left:r(-50);
+                font-weight:bold;                
+            }
+        }
+        .pay-mid{
+            font-size:r(32);  
+            padding:0 r(30);          
+            .mid-cont{
+                display:flex;
+                white-space:nowrap;     
+                padding:r(20) 0;
+                border-bottom:#e6e6e6 1px solid;                          
+                .cont-title{
+                    width:20%;   
+                    padding-right:r(20); 
+                    white-space: nowrap;                    
+                }
+                .cont-sum{
+                    width:75%;
+                    text-overflow:ellipsis;
+                    overflow:hidden; 
+                    text-align: right;
+                    .payCont{
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;                       
+                    }                   
+                }
+            }
+            .mid-price{
+                display:flex;
+                align-items:center;
+                white-space:nowrap;    
+                padding:r(20) 0;
+                border-bottom:#e6e6e6 1px solid;            
+                .price-title{
+                    .title-black{
+                        white-space: nowrap; 
+                    }
+                    .title-red{
+                        color:#b79448;
+                        display: block;
+                        white-space: nowrap;
+                    }
+                }
+                .price-sum{
+                    width:100%;
+                    text-align:right; 
+                    padding-right:r(50);                    
+                    .balance{
+                        color:#999;
+                        font-size:r(28);                        
+                        .bal-word{
+
+                        }
+                        .bal-num{
+
+                        }
+                    }
+                }
+                .price-radio{
+                    width:r(80);
+                    height:r(80);
+                }
+            }
+        }
+        .pay-bom{
+            padding:r(30);
+            padding-top:r(20);               
+            text-align:center;            
+            .bom-text{
+                font-size:r(28);
+                color:#999;
+                padding-bottom:r(100);                
+            }
+            .bom-submit{
+                height:r(80);
+                line-height:r(80);
+                background:#c1c1c1;
+                text-align:center;
+                font-size:r(32); 
+                border-radius:r(10);                
+                color:#fff;    
+                position: relative;            
+            }
+            .active{
+                background: #b79448;
+                color: #fff;
+            }
+        }
+    }
+}

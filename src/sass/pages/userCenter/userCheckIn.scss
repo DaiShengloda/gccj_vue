@@ -1,0 +1,100 @@
+.ck-form {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.top {
+  width: 100%;
+  top: 0;
+  overflow: scroll;
+}
+.placeholder-class {
+  font-size: r(26);
+  color: #8e8e8e;
+}
+.input {
+  height:r(90);
+  line-height: r(90);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 r(20);
+  border-bottom: 1px solid #d4d4d4;
+  font-size: r(30);
+  background: #fff;
+  span {
+    white-space: nowrap;
+  }
+  input {
+    height: 90%;
+    text-align: right;
+    border: none;
+  }
+  .picker {
+    height: 100%;
+    width: 70%;
+    text-align: right;
+    img {
+      width: r(20);
+      height: r(30);
+      vertical-align: middle;
+    }
+  }
+}
+.picker-box{
+  max-width: r(850);
+  position:fixed;
+  width:100%;
+  height:100%;
+  line-height: r(90);
+  top:0;
+  /*left:0;*/
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  .box-select{
+    width:78%;
+    margin: 0 auto;
+    margin-top:20%;
+    background: #fff;
+    .box-li{
+      padding:0 r(24);
+      font-size:r(35);
+      color:#000;
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+}
+.bottom {
+  max-width: r(850);
+  box-sizing: border-box;
+  font-size: r(24);
+  position: fixed;
+  bottom: 0;
+  /*left: 0;*/
+  padding: r(20);
+  background: #fff;
+  box-shadow: 1px 0px r(20) #ccc;
+  z-index: 100;
+  height: r(300);
+  border-top: 1px solid #ccc;
+  .mz {
+    display: flex;
+    #ck{
+      width:r(60);
+    }
+  }
+  button {
+    width: 90%;
+    font-size: r(28);
+    color: white;
+    margin: r(30) auto;
+    height:r(80);
+    margin-left: 5%;
+  }
+  .btn_dis {
+    background: #ccc;
+  }
+  .btn_act {
+    background: #b79448;
+  }
+}

@@ -1,0 +1,145 @@
+.header{
+    height: r(90);
+    width: 100%;
+    padding: 0 r(30);
+    background-color: #fff;
+    .left{
+        float: left;
+        font-size: r(30);
+        line-height: r(90);
+        color: $baseColor;
+    }
+    .right{
+        width: r(90);
+        height: 100%;
+        float: right;
+        text-align: right;
+        &:after{
+            content: "\e683";
+            display: inline-block;
+            font-family: "iconfont";
+            color: $baseColor;
+            font-size: r(50);
+            line-height: r(90);
+        }
+    }
+    .popus-header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        ul{
+            position: absolute;
+            right: 10px;
+            top: r(100);
+            padding: 10px 15px;
+            background-color: #fff;
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba($color: #000000, $alpha: .3)
+        }
+        li{
+            height: r(70);
+            position: relative;
+            padding-left: r(70);
+            line-height: r(70);
+            font-size: r(30);
+            border-bottom: 1px solid #eee;
+            &:last-child{
+                border-bottom: none;
+            }
+            >a{
+                color: #000;
+            }
+            .iconfont{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: r(40);
+                color: $baseColor;
+            }
+            .icon-yuangongfenpei{
+                left: -3px;
+            }
+        }
+    }
+}
+
+
+.search-plan {
+    width: 100%;
+    @include remCalc(height, 100);
+    padding: r(15);
+    z-index: 999;
+    border-top: 1px solid #ececec;
+    font-size: r(28);
+    max-width: 10rem;
+    select,
+    input[type='text'],
+    input[type='search'] {
+        margin: 0;
+        padding: 2px;
+        text-align: left;
+        font-size: r(28);
+        border: none;
+    }
+    button {
+        width: 20%;
+        height: 100%;
+        float: right;
+        padding: 0;
+        line-height: r(60);
+        color: #fff;
+        @include clickBac($baseColor);
+    }
+    .selected-box {
+        width: 24%;
+        margin-right: 3%;
+        position: relative;
+        height: 100%;
+        float: left;
+        .plan-select {
+            width: 100%;
+            height: 100%;
+            float: left; // font-size: 16px;
+            padding: unset;
+            padding-left: 5px;
+            -webkit-appearance: menulist;
+        }
+    }
+    .icon-jiantou_xia {
+        position: absolute;
+        left: 30%;
+        top: 0.2rem;
+        line-height: r(70);
+    }
+    .plan-input {
+        width: 50%;
+        height: 100%;
+        float: left;
+        line-height: r(70); // font-size: 16px;
+        position: relative;
+        display: inline-block;
+        .icon-fangdajing {
+            position: absolute;
+            left: 5px;
+            top: 0; // font-size: 16px;
+            line-height: r(70);
+            z-index: 2;
+        }
+        input {
+            position: absolute;
+            left: 0;
+            top: 0; // padding-left: 25px;
+            width: 100%;
+            border: none;
+            height: 100%; // font-size: 16px;
+            padding: 0 5px;
+            text-align: unset;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    }
+}

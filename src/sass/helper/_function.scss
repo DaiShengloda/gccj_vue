@@ -1,0 +1,139 @@
+
+@function r($px){//$px为需要转换的字号
+  @return $px / 75 * 1rem;
+}
+/* 属性多值传递
+ex:
+@include remCalc(padding,10,20);
+padding: 0.13333rem 0.26667rem;*/
+@mixin remCalc($property, $values...) {
+  $max: length($values);
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: nth($values, $i);
+    $remValues: #{$remValues + $value/75}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  #{$property}: $remValues;
+}
+
+/*按钮纯色系*/
+@mixin button-variant($color, $background) {
+  $active-background: darken($background, 10%);
+  $active-color: darken($color, 10%);
+
+  color: $color;
+  background-color: $background;
+
+  // Hover and focus styles are shared
+  &:hover, &:focus{
+    color: $active-color;
+    background-color: $active-background;
+  }
+}
+/*按钮边框色系*/
+@mixin button-line($color,$bac) {
+  color: $color;
+  background-color: $bac or #fff;
+  border: 1px solid $color;
+
+  // Hover and focus styles are shared
+  &:hover, &:focus{
+    color: #fff;
+    background-color: $color;
+    border: 1px solid $color;
+  }
+}
+
+
+/*按钮大小*/
+@mixin button-size($width, $height, $font-size, $line-height, $border-radius) {
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+/*自适应按钮*/
+@mixin button-free( $font-size, $border-radius,$pad ) {
+  font-size: $font-size;
+  border-radius: $border-radius;
+  padding: $pad;
+}
+
+/*标题*/
+@mixin titles($width,$height,$font-size,$color,$pad-left){
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  line-height: $height;
+  color: $color;
+  padding-left: $pad-left;
+}
+
+/*小消息标签*/
+@mixin tips($padding,$sj-width,$font-size,$baccolor,$radius){
+  font-size: $font-size;
+  line-height: 1;
+  padding: $padding;
+  background-color: $baccolor;
+  position: relative;
+  color: #fff;
+  border-radius: $radius;
+  &::before{
+    content: '';
+    position: absolute;
+    left: -$sj-width*2;
+    top: 50%;
+    margin-top: -$sj-width;
+    width: 0;
+    height: 0;
+    border: $sj-width solid transparent;
+    border-right-color: $baccolor;
+  }
+}
+
+/*背景色点击变化*/
+
+@mixin clickBac($background) {
+  $active-background: darken($background, 10%);
+  background-color: $background;
+  &:visited {
+    background-color: $background;
+  }
+  &:active {
+    background-color: $active-background;
+  }
+}
+
+/*波纹点击效果*/
+
+@mixin ripple($color) {
+  position: relative; //隐藏溢出的径向渐变背景
+  overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; //设置径向渐变
+    background-image: radial-gradient(circle, $color 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+  }
+  &:active:after {
+    transform: scale(0, 0);
+    opacity: .3; //设置初始状态
+    transition: 0s;
+  }
+}

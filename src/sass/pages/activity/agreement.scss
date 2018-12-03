@@ -1,0 +1,179 @@
+.agreement{
+	min-height: 100vh;
+	background: #fff;
+	//签署协议
+	.agreement-sign{	
+		.agree-list{
+			.list-box{
+				padding:0 r(30);
+				height: r(120);
+				font-size: r(30);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid #e6e6e6;
+				.box-msg{
+					.msg-name{
+
+					}
+					.msg-status{
+						padding-top: r(6);
+						color: #b79448;
+						font-size:r(26);
+					}
+				}
+				.box-icon{
+					width:r(27);
+					height:r(48);
+				}
+			}
+		}
+		.agree-ins{
+			padding:r(35) r(30);
+			font-size:r(26);
+			color:#999;
+		}
+		.agree-bom{
+			position: fixed;
+			bottom: 0;
+			width:100%;
+			max-width: r(850);
+			padding:r(20) r(30);
+			.bom-ins{
+				display: flex;
+				justify-content: space-between;
+				.ins-input{
+					width:r(60);
+					.input-default{
+					    position: relative;
+					    top: r(5);
+						border:1px solid #b0b0b0;
+						border-radius: 50%;
+						width:r(24);
+						height:r(24);
+					}
+					.input-active{
+						width:r(25);
+						height:r(25);
+						border:none;
+					}
+				}
+				.ins-txt{
+					font-size: r(26)
+				}
+			}
+			.bom-btn{
+				width:100%;
+				height:r(80);
+				margin-top: r(30);
+				line-height: r(80);
+				text-align: center;
+				font-size: r(34);
+				background: #b0b0b0;
+				color:#fff;
+				border-radius: r(10);
+			}
+			.btn-active{
+				background: #eb3530;
+			}
+		}
+	}
+	/*电子签名*/
+	.ele-sign{
+	    width: 100%;
+	    height: 100vh;
+	    background: #eeeeee;
+	    padding: r(20) 0;
+	    display: flex;
+		.sign-lef{
+			width:r(130);
+			position:relative;
+			.lef-txt{
+				width:r(130);
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				font-size: r(30);
+				color:#666666;
+				letter-spacing: r(5);
+				writing-mode:vertical-rl;
+			}
+			.lef-btns{
+				position:absolute;
+				width:r(130);
+				bottom: 0;
+				display:flex;
+				flex-direction:column;
+				align-items: center;
+				justify-content: center;
+				.btn-refresh{
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					width:r(88);
+					height:r(196);
+					font-size: r(34);
+					border:1px solid #eb3530;
+					color: #eb3530;
+					background: #ffffff;
+					border-radius: r(8);
+					writing-mode:vertical-rl;
+					margin-bottom: r(12);
+				}
+				.btn-save{
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					width:r(88);
+					height:r(196);
+					font-size: r(34);
+					border:1px solid #eb3530;
+					color: #ffffff;
+					background: #eb3530;
+					border-radius: r(8);
+					writing-mode:vertical-rl;
+				}
+			}
+		}
+		.sign-pad{
+			width:100%;
+			padding-right: r(20);
+			.ctx{
+				width:100%;
+				height: 100%;
+				background: #fff;
+				border-radius: r(15);
+			}
+		}
+	}
+	/*签约结果*/
+	.sign-result{
+		.res-img{
+			width:100%;
+			display: flex;
+			justify-content: center;
+			margin-top:r(224);
+			.img-icon{
+				width:r(153);
+				height:r(162);
+			}
+		}
+		.res-txt{
+			width:100%;
+			display: flex;
+			justify-content: center;
+			margin:r(24) 0 r(14) 0;
+			font-size: r(36);
+			color:#eb3530;
+		}
+		.res-ins{
+			span{
+				width:100%;
+				display: flex;
+				justify-content: center;
+				font-size: r(26);
+				color:#666666;
+			}
+		}
+	}
+}

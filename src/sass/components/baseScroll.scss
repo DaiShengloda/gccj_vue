@@ -1,0 +1,22 @@
+.vue-scroll{
+  .scroll-loading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: r(120);
+    width:100%;
+    font-size: r(28);
+    text-align: center;
+    color: #999;
+    background: #efeff5;
+    img{
+      width:r(80);
+      height:r(80);
+    }
+  }
+  .sBom-loading{
+    max-width: r(850);
+    position:fixed;
+    bottom:0;
+  }
+}

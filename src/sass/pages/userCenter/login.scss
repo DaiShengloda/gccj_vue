@@ -1,0 +1,53 @@
+.login {
+  height: 100%;
+  background: #fff;
+}
+.login .top {
+  max-width: r(850);
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  background-image: url('https://api.cf69.com/static/images/login_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.login .bottom {
+  max-width: r(850);
+  position: fixed;
+  bottom: r(350);
+  width: 100%;
+  text-align: center;
+  button {
+    width: 80%;
+    font-size: r(34);
+    border: 1px solid #b89448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:r(80);
+    margin-left: 10%;
+  }
+  button img {
+    width: r(60);
+    height: r(50);
+    margin-right: r(40);
+  }
+  .wx {
+    background: #b89448;
+    color: #fff;
+  }
+  .mobile {
+    background: #fff;
+    color: #b89448;
+    margin-top: r(40);
+    margin-bottom: r(20);
+    .mobile-icon{
+      width: r(39);
+      height: r(60);
+    }
+  }
+  .sm {
+    font-size: r(26);
+    color: #999;
+  }
+}

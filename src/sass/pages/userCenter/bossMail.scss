@@ -1,0 +1,97 @@
+.bossMail{
+	min-height: 100vh;
+    background: #eee;
+	.user-msg{
+		background: #fff;
+		padding: 0 r(30);
+		.msg-name{
+			height: r(100);
+			font-size: r(30);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;		
+			.name-txt{
+
+			}
+			.name-input{
+				color: #000;
+				width: r(450);
+				text-align: right;
+				border: none;
+			}
+			.name-input::-webkit-input-placeholder {
+				color: #999;
+			}
+		}
+		.msg-phone{
+			height: r(100);
+			font-size: r(30);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-top: 1px solid #e6e6e6;
+			.phone-txt{
+
+			}
+			.phone-input{
+				color: #000;
+				width: r(450);
+				text-align: right;
+				border: none;
+			}
+			.phone-input::-webkit-input-placeholder {
+				color: #999;
+			}
+		}
+	}
+	.plain-cont{
+		.cont-title{
+			padding: 0 r(30);
+			height: r(80);
+			display: flex;
+			align-items: flex-end;
+			padding-bottom: r(8);
+			font-size: r(30);
+			color: #666;
+		}
+		.cont-area{
+			width: 100%;
+			height: r(300);
+			padding: 0 r(30);
+			padding-top: r(36);
+			background: #fff;
+			color: #000;
+			font-size: r(30);
+			border: none;
+		}
+		.cont-area::-webkit-input-placeholder {
+			color: #999;
+		}
+	}
+	.mail-bom{
+		.bom-btn{
+			width: 90%;
+			height: r(80);
+			margin: r(30) auto;
+			font-size: r(32);
+			background: #b79548;
+			line-height: r(80);
+			text-align: center;
+			color: #fff;
+			border-radius: r(10);
+		}
+		.bom-txt{
+			font-size: r(30);
+			color: #666;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	.plain-process{
+		padding: r(100) r(30);
+		.process-img{
+			width: 100%;
+			display: block;
+		}
+	}
+}

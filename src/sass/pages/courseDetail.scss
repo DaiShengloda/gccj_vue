@@ -1,0 +1,316 @@
+.course{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fff;
+    .course-video-blank {
+        width:100%;
+        height: r(450);
+    } 
+    .course-video{
+        max-width: r(850);
+        background: #000;
+        position:fixed;
+        top:0;
+        /*left:0;*/
+        height: r(450);
+        z-index: 8;
+        width:100%;
+        .video{
+            width: 100%;                     
+        } 
+        .video-cont{      
+            .video-play{ 
+                position:absolute;
+                width:r(150);
+                height:r(150);
+                top:r(150);
+                left:40%;
+                opacity:1;
+                z-index: 9;            
+            }
+            .pay-content{
+                max-width: r(850);
+                position: absolute;
+                width:100%;
+                height: r(450);
+                font-size:r(32);
+                color:#fff;
+                text-align: center;
+                background: rgba(0,0,0,0.5);
+                top:0;  
+                z-index:9;        
+                .cont-pay-text{    
+                    margin-top:18%;                
+                }
+                .cont-pay-btn{
+                    width:r(200);
+                    height:r(80);   
+                    border-radius:r(80);
+                    line-height:r(80);
+                    margin:0 auto;
+                    background:#b79448;
+                    margin-top:r(20);                
+                }
+            } 
+        }
+    }
+    /*课程详情*/
+    .course-detail {
+        background:#fff; 
+        .course-content {
+            .video-msg {
+                padding:0 r(30);            
+                .msg-title {
+                    font-size:r(30);
+                    height:r(90);
+                    line-height:r(90);                
+                }
+                .msg-summry {
+                    font-size:r(26);
+                    color:#999;
+                    letter-spacing:r(2);
+                    overflow: hidden;
+                    // text-overflow: ellipsis;
+                    display: -webkit-box;
+                    // -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+            .cont-declare {
+                margin:r(20) r(30);
+                font-size:r(26);           
+                color: #b79448;
+            }
+            .cont-bom {
+                padding:r(0) r(30) 0 r(30);            
+                background:#fff;            
+                .finger {
+                    margin:0 r(50);
+                    text-align:center;   
+                    .finger-btn{
+                        width:r(160);
+                        height:r(160);
+                        margin:0 auto;
+                        padding:0;                    
+                    }   
+                    .finger-btn[plain]{
+                        border:none;
+                    }              
+                    img {
+                        width:r(150);
+                        height:r(150);                    
+                    }
+                    view {
+                        font-size:r(34);
+                        font-weight: bold;
+                        color:#e93030;
+                    }
+                }
+                .bom-msg {
+                    border-bottom:#e6e6e6 1px solid;
+                    padding:r(10) 0;
+                    margin-top:r(20);
+                    color:#999;   
+                    font-size:r(26);
+                    .msg-scan {padding-left:r(30);}
+                    .msg-finger {padding-left:r(15);}
+                }
+            }
+            .detail-man {
+                background:#fff; 
+                padding: 0 r(30);
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                height:r(180);
+                border-bottom:1px solid #e6e6e6; 
+                .li-lef {
+                    width:20%;
+                    text-align:center;        
+                    img {
+                        width: r(110);
+                        height: r(110);
+                        border-radius: 50%;
+                    }
+                }
+                .li-btw {
+                    width: 65%;
+                    .man-name {
+                        font-size: r(27); 
+                    }
+                    .man-title {
+                        color:#e93030;
+                        font-size:r(20);                
+                    }
+                    .man-int {
+                        color:#999; 
+                        font-size: r(25);
+                        margin:r(2) 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+                .li-rig {
+                    width:15%; 
+                    .man-atten {
+                        width:r(90);      
+                        border-radius:r(6);
+                        text-align:center;  
+                        height:r(47);
+                        line-height:r(47); 
+                        font-size:r(20);  
+                        position: relative;
+                    } 
+                    .atten-add {
+                        border:1px solid #e93030;
+                        color:#e93030;
+                    }  
+                    .atten-cancle {
+                        border:1px solid #999;
+                        color:#999;
+                    }               
+                }
+            }
+            // 课程PPT
+            .cont-ppt{
+                border-top:r(16) #eee solid;
+                padding:0 r(30) r(30) r(30); 
+                background:#fff;          
+                .ppt-title{
+                    font-size:r(30);
+                    border-bottom:1px #e6e6e6 solid;
+                    height:r(90);
+                    line-height:r(90);                
+                }
+                .ppt-scroll{
+                    .scroll-tab{
+                        font-size:r(30); 
+                        height:r(60);
+                        line-height:r(60);   
+                        display:flex;                                   
+                        .tab-lef{
+                            width:10%;
+                            text-align:left;   
+                            color:#999;
+                            font-size:r(50);                                             
+                        }
+                        .tab-mid{
+                            width:80%;
+                            text-align:center;                        
+                        }
+                        .tab-rig{
+                            width:10%;
+                            text-align:right;  
+                            color:#999;
+                            font-size:r(50);                                              
+                        }
+                    }
+                    .swiper-ppt{
+                        height:r(450);
+                        overflow-x: hidden;
+                        .swiper-slide{
+                            width:100%;
+                            .slide-img{
+                                width:100%;
+                                height:r(480);
+                            }
+                        }               
+                    }
+                }
+            }
+            // 系列
+            .cont-series {
+                border-top:r(16) #eee solid;
+                padding:0 r(30) r(30) r(30);
+                background:#fff;          
+                .series-title{
+                    font-size:r(30);
+                    border-bottom:1px #e6e6e6 solid;
+                    height:r(90);
+                    line-height:r(90);                               
+                }
+                .series-box{
+                    margin-top:r(30); 
+                    overflow-x: hidden;               
+                    .series-li{
+                        height:r(250);                    
+                        .li{
+                            float:left;
+                            width:r(300);
+                            position:relative;
+                           .li-img{
+                            width:100%;
+                            height:r(150);  
+                            display: block;                      
+                           } 
+                           .li-title {
+                            width:r(280);
+                            font-size:r(30);
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                           }
+                           .li-red{
+                            color:#b79448;
+                           }
+                           .li-msg{
+                            width:r(280);
+                            font-size:r(26);
+                            color:#999;                        
+                           }
+                           .li-try{
+                                position:absolute;                                        
+                                // width:r(60);
+                                height:r(36);  
+                                top:r(10);
+                                right:r(10);                          
+                                font-size:r(24);
+                                background: #b79448;
+                                color:#fff;
+                                text-align: center;
+                                border-radius:r(6);
+                                padding:0 r(4);
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        // 
+        .series-blank{
+            height:r(80);
+        }
+        .series-pay{
+            max-width: r(850);
+            display:flex;
+            font-size:r(26);
+            background:#b79448;
+            color:#fff;
+            height:r(80);
+            line-height:r(80);     
+            position:fixed;
+            bottom:r(0);
+            width:100%;
+            justify-content: center;
+            z-index: 100;         
+            .pay-text{
+                width:72%;
+                text-align:center;            
+            }
+            .pay-btn{
+                width:20%;
+                background:#fff;
+                color:#b79448;
+                text-align:center;
+                margin-left:4%;
+                height:r(60);
+                margin-top:r(10);
+                line-height:r(60);
+                border-radius:r(8);            
+            }
+        }
+    }
+}
